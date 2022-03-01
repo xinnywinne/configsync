@@ -24,7 +24,7 @@ metadata:
   namespace: namespace-7
 subjects:
 - kind: ServiceAccount
-  name: ns-reconciler-nacespace-7
+  name: ns-reconciler-namespace-7
   namespace: config-management-system
 roleRef:
   kind: ClusterRole
