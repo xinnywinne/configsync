@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: namespace-4
+---
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: namespace-4
+spec:
+  # Since this is for a namespace repository, the format should be unstructured
+  sourceFormat: unstructured
+  git:
+   repo: https://github.com/xinnywinne/configsync.git
+   branch: main
+   dir: namespace-4
+   auth: none
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: namespace-4-admin
+  namespace: namespace-4
+subjects:
+- kind: ServiceAccount
+  name: ns-reconciler-nacespace-4
+  namespace: config-management-system
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
