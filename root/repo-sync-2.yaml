@@ -13,7 +13,7 @@ spec:
   sourceFormat: unstructured
   git:
    repo: https://github.com/xinnywinne/configsync.git
-   branch: main
+   branch: secret-200
    dir: namespace-2
    auth: none
 ---
