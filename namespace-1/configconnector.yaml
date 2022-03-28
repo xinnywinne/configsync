@@ -1,0 +1,11 @@
+# configconnector.yaml
+
+# The ConfigConnector CR tells the Config Connector operator to install
+# Config Connector.
+
+apiVersion: core.cnrm.cloud.google.com/v1beta1
+kind: ConfigConnector
+metadata:
+  # The name is restricted to ensure that there is only one ConfigConnector
+  # instance installed in the cluster.
+  name: configconnector.core.cnrm.cloud.google.com
