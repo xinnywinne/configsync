@@ -27,8 +27,15 @@ transformers:
         name: hello-chart
         repo: oci://us-central1-docker.pkg.dev/xinn-gke-dev/helm-oci-1
         registry: https://us-central1-docker.pkg.dev
+      templateOptions:
+        releaseName: hello-chart
+        namespace: foo
     - chartArgs:
         name: hello-chart-2
         repo: oci://us-west1-docker.pkg.dev/xinn-gke-dev/quickstart-helm-repo
         registry: https://us-west1-docker.pkg.dev
+      templateOptions:
+        releaseName: hello-chart-2
+        namespace: foo
+
 
