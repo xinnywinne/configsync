@@ -1,7 +1,8 @@
-dfdfddfdfd
-dafsdfa
-asdfafdaffd
+Config Sync Performance boost v1.11 vs v1.12
 
+Config Sync v1.12 contains several changes to let it sync faster with less total memory consumption. Here are some test results that shows the performance boost.
+
+Sync Latency Median (unit: second)
 | Test Name         |         v1.11  |         v1.12  |         Diff  |
 | ----------------- | -------------- | -------------- | ------------- |
 | ConfigMap 10K 1N  |          170   |          120   |       -29.4%  |
@@ -10,9 +11,7 @@ asdfafdaffd
 | Large CR 1K       |          240   |          100   |       -58.3%  |
 | Deployment 3k     |          100   |           50   |       -50.0%  |
 
-adsfasfsfdf
-asdfadfafs
-asdfafdddfss
+Reconciler Peak Memory Usage (unit: MB)
 | Test Name         |         v1.11  |         v1.12  |         Diff  |
 | ----------------- | -------------- | -------------- | ------------- |
 | ConfigMap 10K 1N  |          529   |          323   |       -38.9%  |
@@ -20,8 +19,6 @@ asdfafdddfss
 | CR 3K             |          408   |          441   |       +8.1%   |
 | Large CR 1K       |         1505   |         1998   |       +32.8%  |
 | Deployment 3k     |         1349   |          426   |       -68.4%  |
-
-
 
 
 Sync Latency:
