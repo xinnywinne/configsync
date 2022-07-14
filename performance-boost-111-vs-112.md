@@ -1,8 +1,8 @@
-Config Sync Performance boost v1.11 vs v1.12
+# Config Sync Performance boost v1.11 vs v1.12
 
 Config Sync v1.12 contains several changes to let it sync faster with less total memory consumption. Here are some test results that shows the performance boost.
 
-Sync Latency Median (unit: second)
+### Sync Latency Median (unit: second)
 | Test Name         |         v1.11  |         v1.12  |         Diff  |
 | ----------------- | -------------- | -------------- | ------------- |
 | ConfigMap 10K 1N  |          170   |          120   |       -29.4%  |
@@ -11,7 +11,7 @@ Sync Latency Median (unit: second)
 | Large CR 1K       |          240   |          100   |       -58.3%  |
 | Deployment 3k     |          100   |           50   |       -50.0%  |
 
-Reconciler Peak Memory Usage (unit: MB)
+### Reconciler Peak Memory Usage (unit: MB)
 | Test Name         |         v1.11  |         v1.12  |         Diff  |
 | ----------------- | -------------- | -------------- | ------------- |
 | ConfigMap 10K 1N  |          529   |          323   |       -38.9%  |
@@ -21,7 +21,7 @@ Reconciler Peak Memory Usage (unit: MB)
 | Deployment 3k     |         1349   |          426   |       -68.4%  |
 
 
-Sync Latency:
+### Sync Latency:
 
 Sync latency is defined by the time it takes for a Config Sync reconciler to apply all resources from a git repo to a cluster.
 It doesn’t include the time it takes for all resources to finish reconciliation.
@@ -29,7 +29,7 @@ It doesn’t cover the use cases when dependencies and waits are involved when s
 It doesn’t include the additional API request latency from admission webhooks.
 
 
-Tests:
+### Tests:
 
 ConfigMap 10K 1N: Sync 10000 ConfigMaps to a cluster in 1 namespace after the namespace finishing reconciliation
 
@@ -42,7 +42,7 @@ Large CR 1K: Sync 1000 Large Custom Resources(36 KB) to a cluster and spread in 
 Deployment 3K: Sync 3000 Deployements to a cluster in 1 namespace after the namespace finishing reconciliation
 
 
-Test Cluster:
+### Test Cluster:
 
 Version: 1.22.8-gke.202
 Nodes: 9(3 per zone)
