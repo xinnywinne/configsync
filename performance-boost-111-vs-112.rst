@@ -1,8 +1,3 @@
-Config Sync Performance boost v1.11 vs v1.12
-
-Config Sync v1.12 contains several changes to let it sync faster with less total memory consumption. Here are some test results that shows the performance boost.
-
-Sync Latency Median (unit: second)
 +-------------------+----------------+----------------+---------------+
 | Test Name         |         v1.11  |         v1.12  |         Diff  |
 +===================+================+================+===============+
@@ -13,7 +8,6 @@ Sync Latency Median (unit: second)
 | Deployment 3k     |          100   |           50   |       -50.0%  |
 +-------------------+----------------+----------------+---------------+
 
-Reconciler Peak Memory Usage (unit: MB)
 +-------------------+----------------+----------------+---------------+
 | Test Name         |         v1.11  |         v1.12  |         Diff  |
 +===================+================+================+===============+
