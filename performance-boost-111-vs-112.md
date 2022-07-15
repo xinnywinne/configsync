@@ -31,15 +31,15 @@ It doesn’t include the additional API request latency from admission webhooks.
 
 ### Tests
 
--**ConfigMap 10K 1N**: Sync 10000 ConfigMaps to a cluster in 1 namespace after the namespace finishing reconciliation
+- **ConfigMap 10K 1N**: Sync 10000 ConfigMaps to a cluster in 1 namespace after the namespace finishing reconciliation
 
--**ConfigMap 10K 10N**: Sync 10000 ConfigMaps to a cluster and spread in 10 namespaces after the 10 namespaces finishing reconciliation
+- **ConfigMap 10K 10N**: Sync 10000 ConfigMaps to a cluster and spread in 10 namespaces after the 10 namespaces finishing reconciliation
 
--**CR 3K**: Sync 3000 Custom Resources to a cluster and spread in 3000 namespaces after the 3000 namespaces and related CRD finishing reconciliation
+- **CR 3K**: Sync 3000 Custom Resources to a cluster and spread in 3000 namespaces after the 3000 namespaces and related CRD finishing reconciliation
 
--**Large CR 1K**: Sync 1000 Large Custom Resources(36 KB) to a cluster and spread in 1000 namespaces after the 1000 namespaces and related CRD finishing reconciliation
+- **Large CR 1K**: Sync 1000 Large Custom Resources(36 KB) to a cluster and spread in 1000 namespaces after the 1000 namespaces and related CRD finishing reconciliation
 
--**Deployment 3K**: Sync 3000 Deployements to a cluster in 1 namespace after the namespace finishing reconciliation
+- **Deployment 3K**: Sync 3000 Deployements to a cluster in 1 namespace after the namespace finishing reconciliation
 
 
 ### Test Cluster:
