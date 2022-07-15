@@ -44,7 +44,7 @@ It doesn’t include the additional API request latency from admission webhooks.
 
 ### Test Cluster:
 
-**Version**: 1.22.8-gke.202
-**Nodes**: 9(3 per zone)
-**Total vCPUs**: 144
-**Total memory**: 576GB
+- **Version**: 1.22.8-gke.202
+- **Nodes**: 9(3 per zone)
+- **Total vCPUs**: 144
+- **Total memory**: 576GB
