@@ -42,7 +42,7 @@ It doesn’t include the additional API request latency from admission webhooks.
 - **Deployment 3K**: Sync 3000 Deployements to a cluster in 1 namespace after the namespace finishing reconciliation
 
 
-### Test Cluster:
+### Test Cluster
 
 - **Version**: 1.22.8-gke.202
 - **Nodes**: 9(3 per zone)
